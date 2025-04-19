@@ -1,0 +1,2 @@
+streamlit==1.44.0
+streamlit_pdf_viewer==0.0.22
