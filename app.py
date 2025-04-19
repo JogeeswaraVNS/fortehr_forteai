@@ -10,6 +10,7 @@ options = [
     "Startup Overview",
     "Problem Statement",
     "Solution Description",
+    "Founding Team",
     "Pitch Deck (PDF)"
 ]
 
@@ -40,6 +41,34 @@ elif selected == "Solution Description":
     The platform integrates with existing HR systems to analyze performance, engagement, and communication data, providing timely alerts and recommendations. 
     This helps organizations reduce turnover costs, boost employee engagement, and maintain a competitive advantage by retaining their best talent.
     """)
+elif selected == "Founding Team":
+    st.header("Founding Team")
+    col1, col2 = st.columns(2)  # Create two columns
+
+    with col1:
+        st.subheader("P. Jogeeswara. V. N. S")
+        st.write("**Co-Founder**")
+        st.write(
+            "Phone No. 9063316737"
+        )
+        st.write(
+            "Gmail. jogeeswarapuvvala@gmail.com"
+        )
+
+    with col2:
+        st.subheader("A. Sai Karthik")
+        st.write("**Co-Founder**")
+        st.write(
+            "Phone No. 7702444186"
+        )
+        st.write(
+            "Gmail. saikarthik.sa@gmail.com"
+        )
+
+    st.write(
+        "Together, we combine deep domain expertise and technical innovation to solve critical challenges in employee retention."
+    )
+
 
 elif selected == "Pitch Deck (PDF)":
     st.header("Pitch Deck")
