@@ -1,2 +1,4 @@
+pandas==2.3.0
+plotly==6.0.1
 streamlit==1.44.0
 streamlit_pdf_viewer==0.0.22
