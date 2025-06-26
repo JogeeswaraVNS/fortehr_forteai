@@ -92,7 +92,7 @@ options = [
     "ForteHR Overview",
     "Problem Statement",
     "Solution Description",
-    "Prototype"
+    "Prototype",
     "Founding Team",
     "Pitch Deck (PDF)",
     "USP"
