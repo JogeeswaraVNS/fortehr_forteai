@@ -92,6 +92,7 @@ options = [
     "ForteHR Overview",
     "Problem Statement",
     "Solution Description",
+    "Prototype"
     "Founding Team",
     "Pitch Deck (PDF)",
     "USP"
@@ -184,6 +185,14 @@ elif selected == "USP":
 elif selected == "ForteAI and ForteHR Intro":
     
     video_file = open('ForteAI and ForteHR Intro.mp4', 'rb')
+    video_bytes = video_file.read()
+
+    st.video(video_bytes)
+    
+    
+elif selected == "Prototype":
+    
+    video_file = open('ForteHR by ForteAI Technologies.mp4', 'rb')
     video_bytes = video_file.read()
 
     st.video(video_bytes)
