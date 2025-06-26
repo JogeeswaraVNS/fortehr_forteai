@@ -83,12 +83,13 @@ fig.update_layout(
 )
 
 st.set_page_config(layout="wide")
-st.image("ForteAI Logo.png", use_container_width =True)
+st.image("ForteAI Logo (3).png", use_container_width =True)
 
 st.title("ForteHR - where talent meets recognition")
 # Sidebar dropdown options
 options = [
-    "Startup Overview",
+    "ForteAI and ForteHR Intro",
+    "ForteHR Overview",
     "Problem Statement",
     "Solution Description",
     "Founding Team",
@@ -98,8 +99,9 @@ options = [
 
 selected = st.sidebar.selectbox("Select content to view", options)
 
-if selected == "Startup Overview":
-    st.header("Startup Overview")
+if selected == "ForteHR Overview":
+
+    st.header("ForteHR Overview")
     st.write("""
     Our startup harnesses the power of artificial intelligence to help organizations tackle the critical challenges of employee attrition and retention. 
     By analyzing performance data, engagement metrics, and behavioral patterns, our AI-driven platform identifies star performers and predicts employees at risk of leaving. 
@@ -145,7 +147,7 @@ elif selected == "Founding Team":
             "Phone No. 8008085533"
         )
         st.write(
-            "Gmail. saikarthik.sa@gmail.com"
+            "Gmail. karthik30903@gmail.com"
         )
 
     st.write(
@@ -158,6 +160,8 @@ elif selected == "Pitch Deck (PDF)":
     pdf_viewer(pdf_path, width=950, height=500)  # Adjust as needed
 
 elif selected == "USP":
+    
+
     
     st.title("PPS 3D Cube + Visual Insights")
 
@@ -175,3 +179,11 @@ elif selected == "USP":
 
     st.markdown("### Interactive 3D PPS Cube")
     st.plotly_chart(fig, use_container_width=True)
+    
+    
+elif selected == "ForteAI and ForteHR Intro":
+    
+    video_file = open('ForteAI and ForteHR Intro.mp4', 'rb')
+    video_bytes = video_file.read()
+
+    st.video(video_bytes)
