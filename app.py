@@ -161,10 +161,8 @@ elif selected == "Pitch Deck (PDF)":
     pdf_viewer(pdf_path, width=950, height=500)  # Adjust as needed
 
 elif selected == "USP":
-    
-
-    
-    st.title("PPS 3D Cube + Visual Insights")
+        
+    st.title("Unique Selling Proposition - PPS 3D Cube + Visual Insights")
 
     col1, col2 = st.columns(2)
     col3, col4 = st.columns(2)
@@ -184,6 +182,10 @@ elif selected == "USP":
     
 elif selected == "ForteAI and ForteHR Intro":
     
+    st.header("Watch Our Quick Company & Product Overview")
+    
+    st.subheader("Please play the video below to understand our company and product")
+    
     video_file = open('ForteAI and ForteHR Intro.mp4', 'rb')
     video_bytes = video_file.read()
 
@@ -191,7 +193,10 @@ elif selected == "ForteAI and ForteHR Intro":
     
     
 elif selected == "Prototype":
+    st.header("See How ForteHR Works - Prototype Preview")
     
+    st.subheader("Please play the video below to see how the prototype works")
+
     video_file = open('ForteHR by ForteAI Technologies.mp4', 'rb')
     video_bytes = video_file.read()
 
