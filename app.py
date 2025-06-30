@@ -93,7 +93,6 @@ options = [
     "Prototype",
     "Founding Team",
     "Pitch Deck (PDF)",
-    "USP"
 ]
 
 selected = st.sidebar.selectbox("Select content to view", options)
@@ -141,25 +140,7 @@ elif selected == "Pitch Deck (PDF)":
     pdf_path = "Pitch Deck ForteHR.pdf"  # Update this path
     pdf_viewer(pdf_path, width=950, height=500)  # Adjust as needed
 
-elif selected == "USP":
-        
-    st.title("Unique Selling Proposition - PPS 3D Cube + Visual Insights")
 
-    col1, col2 = st.columns(2)
-    col3, col4 = st.columns(2)
-    with col1:
-        st.image("PPS.png", caption="PPS (Potential-Performance-Sentiment)", use_container_width =True)
-    with col2:
-        st.image("PPS_2D_Negative.png", caption="Sentiment: Negative", use_container_width =True)
-    with col3:
-        st.image("PPS_2D_Neutral.png", caption="Sentiment: Neutral", use_container_width =True)
-    with col4:
-        st.image("PPS_2D_Positive.png", caption="Sentiment: Positive", use_container_width =True)
-
-
-    st.markdown("### Interactive 3D PPS Cube")
-    st.plotly_chart(fig, use_container_width=True)
-    
     
 elif selected == "ForteAI and ForteHR Intro":
     
